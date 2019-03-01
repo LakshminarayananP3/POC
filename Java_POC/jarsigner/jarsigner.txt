@@ -1,0 +1,20 @@
+keytool -genkeypair -dname "cn=Malik, ou=Archon, o=Platform3Solutions, c=US" -alias archon -keypass privateKeyPassword -keystore /Users/admin/Work/P3-projects/JarDigitalSigner/keystore -storepass keystorePassword -validity 180 keystore.type=jks
+
+jarsigner -keystore /Users/admin/Work/P3-projects/JarDigitalSigner/keystore -storepass keystorePassword -keypass privateKeyPassword -signedjar signedKeyPress.jar KeyPress.jar archon -tsa http://timestamp.comodoca.com
+
+jarsigner -verify signedkeyPress.jar -keystore /Users/admin/Work/P3-projects/JarDigitalSigner/keystore
+
+
+jarsigner -keystore /Users/admin/Work/waste/Build_App_Creator/keystore/keystore -storepass keystorePassword -keypass privateKeyPassword archon -tsa http://timestamp.comodoca.com -signedjar Archonhandler.jar Archonhandler-orig.jar
+
+jarsigner -keystore /Users/admin/Work/waste/Build_App_Creator/keystore/keystore -storepass keystorePassword -keypass privateKeyPassword -signedjar Archonhandler.jar Archonhandler-orig.jar archon -tsa http://timestamp.comodoca.com
+
+
+
+
+
+
+keytool -genkey -alias signFiles -keypass kps135 -keystore senderstore -storepass ab987c
+
+jarsigner -keystore senderstore -signedjar signedCopy.jar Copy.jar signFiles
+
