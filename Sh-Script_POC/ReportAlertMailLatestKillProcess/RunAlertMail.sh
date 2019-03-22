@@ -1,0 +1,1 @@
+nohup watch -n 14400 sh ReportEndAlertMail.sh > alertMail.log &

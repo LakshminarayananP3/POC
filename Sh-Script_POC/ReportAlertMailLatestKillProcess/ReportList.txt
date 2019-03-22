@@ -1,0 +1,8 @@
+java com.uhc.report.ReportJobMain_EurydiceGermany
+java -Xms256M -Xmx512M com.p3.report.ReportJobMain_PPRE peoplesoft_lcov_hcm
+java -Xms256M -Xmx512M com.p3.report.ReportJobMain_PPRE peoplesoft_lcov_crm
+java -Xms256M -Xmx512M com.p3.report.ReportJobMain_PPRE peoplesoft_mdt_crm
+java -Xms256M -Xmx512M com.p3.report.ReportJobMain_PPRE basware
+java com.uhc.report.ReportJobMain_EurydiceFrance
+java com.uhc.report.ReportJobMain_EurydiceItaly
+java com.uhc.report.ReportJobMain_EurydiceSpain

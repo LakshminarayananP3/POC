@@ -1,0 +1,8 @@
+peoplesoft_lcov_hcm
+peoplesoft_lcov_crm
+peoplesoft_mdt_crm
+basware
+EurydiceGermany
+EurydiceFrance
+EurydiceItaly
+EurydiceSpain

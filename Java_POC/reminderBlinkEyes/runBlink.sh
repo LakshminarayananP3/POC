@@ -9,7 +9,7 @@ fi
  # 	exit 1
  # fi
  while true; do
- 	java -jar ./Blink.jar
+ 	java -Xdock:icon=./giphy.gif -jar Blink.jar
  	echo "Sleeping for " 1800
  	sleep $1
  done
